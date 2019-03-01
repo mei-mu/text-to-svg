@@ -67,7 +67,7 @@ export default class TextToSVG {
 
   getHeight(fontSize) {
     const fontScale = 1 / this.font.unitsPerEm * fontSize;
-    return (this.font.ascender - this.font.descender) * fontScale;
+    return 1000 * fontScale;
   }
 
   getMetrics(text, options = {}) {
